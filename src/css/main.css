@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #2a2b30;
+    color: #cecece;
+    font: 100 14px arial;
+    display: flex;
+    align-items: center;
+}
+
+main {
+    margin: 100px auto 30px auto;
+}
+
+div {
+    margin: 30px 0;
+}
+
+#budget-container h2 {
+    margin-right: 50px;
+    display: inline;
+}
+
+#change-budget {
+    font-size: 12px;
+    border-bottom: 1px dashed;
+    color: #9798a7;
+    cursor: pointer;
+}
+
+#budget {
+    width: 100px;
+}
+
+#budget:disabled {
+    background: none;
+}
+
+.button {
+    padding: 5px 20px;
+    background-color: #999ba3;
+    color: #24252a;
+    font-weight: 600;
+}
+
+#budget {
+    background-color: #24252a;
+    min-width: 800px;
+}
+
+thead{
+    color: #5c5edc;
+}
+
+.price {
+    width: 169px;
+}
+
+.date {
+    width: 144px;
+}
+
+.manage {
+    width: 40px;
+}
+
+.category {
+    width: 105px;
+}
+
+.delete-button {
+    color: #d07786;
+    cursor: pointer;
+    width: 40px;
+    text-align: center;
+    margin: 0;
+}
+
+input, select {
+    border: none;
+    background-color: #24252a;
+    color: #cecece;
+}
+
+td:first-child input{
+    width: 96%;
+    margin: 0 2%;
+}
+
+.error {
+    background-color: #d07786;
+}
+
+#result {
+    width: 500px;
+}
+
+#result td:first-child {
+    width: 300px;
+}
+
+h2 > .js-category {
+    margin-left: 20px;
+}

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<main>
+    <div id="budget-container">
+        <h2>Ежемесячный доход</h2>
+        <input id="salary" type="text" value="10000" onblur="finishEditingBudget()" disabled>
+        <span style="display: none;"></span>
+        <span id="change-budget">редактировать</span>
+    </div>
+    <div>
+        <table id="budget">
+            <thead>
+            <tr>
+                <th>Покупка</th>
+                <th class="price">Цена</th>
+                <th class="category">Категория</th>
+                <th class="date">Дата</th>
+                <th class="manage"></th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <input class="button" type="button" value="добавить строку" onclick="addRow()">
+        <input class="button" type="button" value="посчитать бюджет" onclick="countSpending()">
+    </div>
+    <hr>
+    <div>
+        <table id="result">
+            <tr>
+                <td><h2>Всего было потрачено:</h2></td>
+                <td><span id="sum">0</span></td>
+                <td><span id="ratio">0.00 %</span></td>
+            </tr>
+            <tr>
+                <td><h2>В категории</h2></td>
+                <td><span id="sumInCategory">0</span></td>
+                <td><span id="ratioInCategory">0.00 %</span></td>
+            </tr>
+        </table>
+    </div>
+    <script src="js/main.js"></script>
+</main>
+</body>
+</html>
